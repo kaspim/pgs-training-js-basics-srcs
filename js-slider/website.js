@@ -55,7 +55,7 @@ function jsSlider(options) {
 	
 	function startRotate() {
 		if(interval === null) constructSlider(); showSlide();
-		interval = setInterval(function() { showSlide(); }, (timer * 1000));
+		interval = setInterval(function() { showSlide(); }, timer * 1000);
 	}
 	
 	function stopRotate() {
