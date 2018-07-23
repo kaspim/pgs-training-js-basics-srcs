@@ -22,7 +22,6 @@ function jsSlider(options) {
 		slide += '<div class="image"><img src="' + item.image + '" alt="" /></div>';
 		slide += '<div class="text"><h2>' + item.title + '</h2><p>' + item.text + '</p></div>';
 		slide += ((item.link == '') ? '' : '<a class="main-link" href="' + item.link + '"></a>');
-		slide += '<div class="navigation"></div>';
 		slide += '</div>';
 		
 		document.querySelector('#slider').innerHTML = slide;
@@ -31,12 +30,13 @@ function jsSlider(options) {
 	}
 	
 	function showNavigation() {
-		navigation = '';
+		navigation = '<div class="navigation">';
 		for (var i = 0; i < data.length; i++) {
 			navigation += '<a class="navigation-link ' + ((i === counter) ? 'navigation-active' : 'navigation-inactive') + '" data-count="' + i +'" href=""></a>';
 		}
+		navigation += '</div>';
 		
-		document.querySelector('div.navigation').innerHTML = navigation;
+		document.querySelector('#slider').insertAdjacentHTML('beforeend', navigation);
 		
 		activateNavigation();
 	}
