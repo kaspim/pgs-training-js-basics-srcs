@@ -1,0 +1,27 @@
+html, body {
+	width: 100%; height: 100%;
+	margin: 0; padding: 0;
+}
+
+body {
+	background-color: rgb(245,245,245);
+}
+
+#page {
+	width: 100%; max-width: 980px;
+	margin: 0 auto; padding: 20px;
+	box-sizing: border-box; /* Definuje šířku včetně vnitřního okraje; Prvek bude mít 100% (respektive 980px) včetně 20px levého a pravého okraje; */
+	background-color: rgb(255,255,255);
+}
+
+#slider h2 { margin: 0; padding: 10px 0; font-size: 3vw; }
+#slider p { margin: 0; pading: 10px 0; font-size: 1.5vw; }
+#slider a.main-link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: ''; display: block; }
+#slider .slide { position: relative; }
+#slider .text { width: 80%; position: absolute; top: 50%; left: 50%; display: inline-block; transform: translate(-50%, -50%); text-align: center; color: rgb(255,255,255); }
+#slider .image::after { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: ''; background-color: rgba(0,0,0,0.25); }
+#slider .image img { width: 100%; height: auto; margin: 0; padding: 0; display: block; }
+#slider .navigation { position: absolute; left: 10%; right: 10%; bottom: 10px; text-align: center; }
+#slider .navigation a.navigation-link { width: 10px; height: 10px; margin: 0 4px; display: inline-block; border: 2px solid rgb(255,255,255); border-radius: 50%; }
+#slider .navigation a.navigation-link:hover { background-color: rgba(255,255,255,0.5); }
+#slider .navigation a.navigation-active, #slider .navigation a.navigation-active:hover { background-color: rgb(255,255,255); }
