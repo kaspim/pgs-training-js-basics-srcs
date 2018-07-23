@@ -14,6 +14,7 @@ body {
 	background-color: rgb(255,255,255);
 }
 
+#slider { position: relative; }
 #slider h2 { margin: 0; padding: 10px 0; font-size: 3vw; }
 #slider p { margin: 0; pading: 10px 0; font-size: 1.5vw; }
 #slider a.main-link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: ''; display: block; }
