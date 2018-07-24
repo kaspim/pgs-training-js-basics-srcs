@@ -56,7 +56,7 @@
 			checkForm(element);
 		});
 		
-		/* Funkce ověřuje shodu zadání s požadovaným vzorem. Není-li zadání správné, zobrazí se chybové hlášení. */
+		/* Funkce ověřuje shodu zadání s požadovaným vzorem. Není-li zadání správné, zobrazí se chybové hlášení. Lze kombimovat i s HTML5 validací a atributy pattern, title namísto datových atributů */
 		function checkForm(element) {
 			var value = $(element).val();
 			var pattern = $(element).data('regex');
