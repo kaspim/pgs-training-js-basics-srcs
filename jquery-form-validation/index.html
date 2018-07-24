@@ -62,7 +62,7 @@
 			var pattern = $(element).data('regex');
 			var message = $(element).data('message');
 			
-			if(value.match(pattern)) {
+			if(value.match(pattern) || value == '') {
 				$(element).removeClass('invalid').closest('div.formrow').find('span.error').remove();
 			} else {
 				$(element).addClass('invalid').closest('div.formrow').not(':has(.error)').append('<span class="error">' + message + '</span>');
