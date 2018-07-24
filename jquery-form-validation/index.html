@@ -73,7 +73,7 @@
 		/* Zlepšení uživatelské přívětivosti. Pokud vznikne pole s chybným zadáním, bude kontrolováno v průběhu celé editace, nikoli po jejím ukončení, aby uživatel věděl, zda jsou již informace zadány správně */
 		function checkRepairs() {
 			/* Událost reaguje na ukončení stisku klávesy ve formulářových polích označených za nevalidní */
-			$('input.invalid').on('keyup', function() {
+			$('input.invalid').unbind('keyup').on('keyup', function() {
 				var element = $(this);
 				checkForm(element);
 			});
