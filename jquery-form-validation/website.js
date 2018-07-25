@@ -43,6 +43,7 @@ function formControl() {
 		});
 	}
 	
+	/* Kontrola všech vstupních polí formuláře */
 	function checkAll() {
 		$('input[data-regex]').each(function() {
 			var element = $(this);
