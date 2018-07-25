@@ -56,13 +56,25 @@
 			checkForm(element);
 		});
 		
+		/* Událost s kontrolou, zda jsou formulářová pole vyplněna správně */
+		$('form').on('submit', function() {
+			checkForm(element);
+			
+			if ($('input.invalid').length > 0) {
+				alert('Před odesláním zkontrolujte formulář');
+				return false;
+			} else {
+				return true;
+			}
+		});
+		
 		/* Funkce ověřuje shodu zadání s požadovaným vzorem. Není-li zadání správné, zobrazí se chybové hlášení. Lze kombimovat i s HTML5 validací a atributy pattern, title namísto datových atributů */
 		function checkForm(element) {
 			var value = $(element).val();
 			var pattern = $(element).data('regex');
 			var message = $(element).data('message');
 			
-			if(value.match(pattern) || value == '') {
+			if (value.match(pattern) || value == '') {
 				$(element).removeClass('invalid').closest('div.formrow').find('span.error').remove();
 			} else {
 				$(element).addClass('invalid').closest('div.formrow').not(':has(.error)').append('<span class="error">' + message + '</span>');
