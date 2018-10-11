@@ -44,7 +44,7 @@ if (a == 1) {
 ```
 
 ```
-var a = 3;
+var a = 2;
 
 if (a == 1) {
   document.write('a se rovná 1');
@@ -54,5 +54,5 @@ if (a == 1) {
   document.write('a se nerovná 1 ani 2');
 }
 
-/* podmínka vypíše a se nerovná 1 ani 2 */
+/* podmínka vypíše a se rovná 2 */
 ```
