@@ -27,7 +27,7 @@ if (a == 1) {
   document.write('a se rovná 1');
 }
 ```
-__ podmínka vypíše a se rovná 1 __
+__podmínka vypíše a se rovná 1__
 
 ```
 var a = 2;
@@ -38,7 +38,7 @@ if (a == 1) {
   document.write('a se nerovná 1');
 }
 ```
-__ podmínka vypíše a se nerovná 1 __
+__podmínka vypíše a se nerovná 1__
 
 ```
 var a = 3;
@@ -51,4 +51,4 @@ if (a == 1) {
   document.write('a se nerovná 1 ani 2');
 }
 ```
-__ podmínka vypíše a se nerovná 1 ani 2 __
+__podmínka vypíše a se nerovná 1 ani 2__
