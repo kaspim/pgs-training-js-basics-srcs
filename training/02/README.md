@@ -21,5 +21,17 @@ Operátor | Popis
 
 ### Příklady
 ```
-xxx
+var a = 1;
+if(a == 1) {
+  document.write('a se rovná 1');
+}
+```
+
+```
+var a = 2;
+if(a == 1) {
+  document.write('a se rovná 1');
+} else {
+  document.write('a se nerovná 1');
+}
 ```
