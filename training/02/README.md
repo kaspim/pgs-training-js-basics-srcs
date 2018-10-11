@@ -1,4 +1,5 @@
 ## Podmínky a operátory
+
 ### Operátory
 Operátor | Zápis
 -------- | -----
@@ -10,3 +11,8 @@ je menší nebo rovno než | <=
 je větší nebo rovno než | >=
 je typově rovno | ===
 je typově nerovno | !==
+
+### Příklady
+```
+xxx
+```
