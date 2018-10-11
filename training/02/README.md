@@ -8,7 +8,7 @@ Operátor | Popis
 < | je menší než
 > | je větší než
 <= | je menší nebo rovno než
->= | je větší nebo rovno než
+\>= | je větší nebo rovno než
 === | je hodnotou nebo typem rovno
 !== | je hodnotou nebo typem nerovno
 
