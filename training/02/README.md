@@ -22,6 +22,7 @@ Operátor | Popis
 ### Příklady
 ```
 var a = 1;
+
 if(a == 1) {
   document.write('a se rovná 1');
 }
@@ -29,6 +30,7 @@ if(a == 1) {
 
 ```
 var a = 2;
+
 if(a == 1) {
   document.write('a se rovná 1');
 } else {
