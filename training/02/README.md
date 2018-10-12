@@ -30,6 +30,8 @@ if (a == 1) {
 
 // podmínka vypíše 'a se rovná 1'
 ```
+Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/3/)
+
 
 ```
 var a = 2;
@@ -42,6 +44,8 @@ if (a == 1) {
 
 // podmínka vypíše 'a se nerovná 1'
 ```
+Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/4/)
+
 
 ```
 var a = 2;
@@ -56,6 +60,8 @@ if (a == 1) {
 
 // podmínka vypíše 'a se rovná 2'
 ```
+Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/6/)
+
 
 ```
 var a = 1;
