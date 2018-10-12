@@ -20,7 +20,7 @@ Operátor | Popis
 \! | NOT (logický zápor)
 
 ### Příklady
-
+#### Jednoduchá podmínka
 ```
 var a = 1;
 
@@ -32,7 +32,7 @@ if (a == 1) {
 ```
 Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/3/)
 
-
+#### Jednoduchá podmínka s hodnotou při nesplnění
 ```
 var a = 2;
 
@@ -46,7 +46,7 @@ if (a == 1) {
 ```
 Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/4/)
 
-
+#### Větvená podmínka
 ```
 var a = 2;
 
