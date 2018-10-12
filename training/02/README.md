@@ -65,6 +65,24 @@ document.write(output); // podmínka vypíše 'a se rovná 2'
 ```
 [Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/3/)
 
+#### Konstrukce s využitím switch
+```
+let output;
+let a = 2;
+
+switch (a) {
+  case 1:
+    output = 'a se rovná 1'; break;
+  case 2:
+    output = 'a se rovná 2'; break;
+  default:
+    output = 'a se nerovná 1 ani 2';
+}
+
+document.write(output); // podmínka vypíše 'a se rovná 2'
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/4/)
+
 
 ```
 var a = 1;
