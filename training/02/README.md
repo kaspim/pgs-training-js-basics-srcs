@@ -22,45 +22,48 @@ Operátor | Popis
 ### Příklady
 #### Jednoduchá podmínka
 ```
-var a = 1;
+let output;
+let a = 1;
 
 if (a == 1) {
-  document.write('a se rovná 1');
+  output = 'a se rovná 1';
 }
 
-// podmínka vypíše 'a se rovná 1'
+document.write(output); // podmínka vypíše 'a se rovná 1'
 ```
-Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/3/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/)
 
 #### Jednoduchá podmínka s hodnotou při nesplnění
 ```
-var a = 2;
+let output;
+let a = 2;
 
 if (a == 1) {
-  document.write('a se rovná 1');
+  output = 'a se rovná 1';
 } else {
-  document.write('a se nerovná 1');
+  output = 'a se nerovná 1';
 }
 
-// podmínka vypíše 'a se nerovná 1'
+document.write(output); // podmínka vypíše 'a se nerovná 1'
 ```
-Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/4/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/2/)
 
 #### Větvená podmínka
 ```
-var a = 2;
+let output;
+let a = 2;
 
 if (a == 1) {
-  document.write('a se rovná 1');
+  output = 'a se rovná 1';
 } else if (a == 2) {
-  document.write('a se rovná 2');
+  output = 'a se rovná 2';
 } else {
-  document.write('a se nerovná 1 ani 2');
+  output = 'a se nerovná 1 ani 2';
 }
 
-// podmínka vypíše 'a se rovná 2'
+document.write(output); // podmínka vypíše 'a se rovná 2'
 ```
-Příklad: [zobrazit](https://jsfiddle.net/kaspim/ytkfpwL5/6/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/3/)
 
 
 ```
