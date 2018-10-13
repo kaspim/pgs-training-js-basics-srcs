@@ -1,6 +1,6 @@
-## Podmínky a operátory
+# Podmínky a operátory
 
-### Operátory podmínek
+## Operátory podmínek
 Operátor | Popis
 -------- | -----
 \=\= | je rovno
@@ -9,21 +9,21 @@ Operátor | Popis
 \> | je větší než
 \<\= | je menší nebo rovno než
 \>\= | je větší nebo rovno než
-\=\=\= | je hodnotou nebo typem rovno
-\!\=\= | je hodnotou nebo typem nerovno
+\=\=\= | je rovno hodnotou a typem
+\!\=\= | je nerovno hodnotou nebo typem
 
-### Logické operátory
+## Logické operátory
 Operátor | Popis
 -------- | -----
 \&\& | AND (logické A)
 \|\| | OR (logické NEBO)
 \! | NOT (logický zápor)
 
-### Příklady
-#### Jednoduchá podmínka
+## Základní konstrukce podmínek
+### Jednoduchá podmínka
 ```
-let output;
-let a = 1;
+var output;
+var a = 1;
 
 if (a == 1) {
   output = 'a se rovná 1';
@@ -31,12 +31,12 @@ if (a == 1) {
 
 document.write(output); // podmínka vypíše 'a se rovná 1'
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/1/)
 
-#### Jednoduchá podmínka s hodnotou při nesplnění
+### Jednoduchá podmínka s hodnotou při nesplnění
 ```
-let output;
-let a = 2;
+var output;
+var a = 2;
 
 if (a == 1) {
   output = 'a se rovná 1';
@@ -46,12 +46,12 @@ if (a == 1) {
 
 document.write(output); // podmínka vypíše 'a se nerovná 1'
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/2/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/2/)
 
-#### Větvená podmínka
+### Větvená podmínka s hodnotou při nesplnění
 ```
-let output;
-let a = 2;
+var output;
+var a = 2;
 
 if (a == 1) {
   output = 'a se rovná 1';
@@ -63,12 +63,22 @@ if (a == 1) {
 
 document.write(output); // podmínka vypíše 'a se rovná 2'
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/3/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/3/)
 
-#### Konstrukce s využitím switch
+## Jiné způsoby konstrukce podmínek
+### Zkrácený zápis if - else
 ```
-let output;
-let a = 2;
+var a = 2;
+var output = (a == 1) ? 'a se rovná 1' : 'a se nerovná 1';
+
+document.write(output); // podmínka vypíše 'a se nerovná 1'
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/5/)
+
+### Konstrukce if - else if - else s využitím switch
+```
+var output;
+var a = 2;
 
 switch (a) {
   case 1:
@@ -81,17 +91,25 @@ switch (a) {
 
 document.write(output); // podmínka vypíše 'a se rovná 2'
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/r902qe4v/4/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/4/)
 
+## Shoda hodnotou a typem
+```
+1 == '1'    // true  (number a string s hodnotou 1)
+1 === '1'   // false (typ proměnných není shodný)
+1 == true   // true  (hodnota 1 je rovna true; hodnota 0 je rovna false)
+1 === true  // false (typ proměnných není shodný)
+```
 
+### Rozdíl v práci s typem proměnné
 ```
 var a = 1;
+document.write(a + 1); // vypíše hodnotu number 2
 
-if (a == true) {
+var b = '1';
+document.write(b + 1); // vypíše hodnotu tring 11
 
-}
-
-if (a === true) {
-  document.write('');
-}
 ```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/6/)
+
+[Zpět na seznam kapitol](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training)
