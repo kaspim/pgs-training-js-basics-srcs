@@ -112,4 +112,4 @@ document.write(b + 1); // vypíše hodnotu tring 11
 ```
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/6/)
 
-[Zpět na seznam kapitol](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training)
+[Zpět na seznam kapitol](https://github.com/kaspim/pgs-training-js-basics-srcs/)
