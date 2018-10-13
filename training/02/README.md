@@ -1,4 +1,4 @@
-# Podmínky a operátory
+# 02 Podmínky a operátory
 
 ## Operátory podmínek
 Operátor | Popis
