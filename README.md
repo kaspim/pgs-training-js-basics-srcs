@@ -6,8 +6,9 @@
 
 ## Obsah
 * [Deklarování a typy proměnných](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/01)
-* [Podmínky a operátory](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/02)
-* [Funkce](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/03)
+* [Práce s proměnnými](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/02)
+* [Podmínky a operátory](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/03)
+* [Funkce](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/04)
 
 ## Kam dál?
 * [w3schools.com - EN](https://www.w3schools.com/js/default.asp)
