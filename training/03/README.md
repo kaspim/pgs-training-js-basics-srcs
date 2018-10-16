@@ -1,95 +1,115 @@
-# 03 Funkce
+# Podmínky a operátory
 
-```
-function mojefunkce() {
-  // kód funkce
-}
-```
+## Operátory podmínek
+Operátor | Popis
+-------- | -----
+\=\= | je rovno
+\!\= | není rovno
+\< | je menší než
+\> | je větší než
+\<\= | je menší nebo rovno než
+\>\= | je větší nebo rovno než
+\=\=\= | je rovno hodnotou a typem
+\!\=\= | je nerovno hodnotou nebo typem
 
-```
-function pozdrav() {
-  document.write('Ahoj!');
-}
+## Logické operátory
+Operátor | Popis
+-------- | -----
+\&\& | AND (logické A)
+\|\| | OR (logické NEBO)
+\! | NOT (logický zápor)
 
-pozdrav();
+## Základní konstrukce podmínek
+### Jednoduchá podmínka
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/10/)
+var output;
+var a = 1;
 
-```
-function pozdrav(osloveni) {
-  document.write('Ahoj ' + osloveni + '!');
-}
-
-pozdrav('Martine');
-pozdrav('Katko');
-```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/8/)
-
-### Výchozí hodnoty parametrů
-#### Zápis podporovaný od ECMAScript 6 - standard 2015
-```
-function pozdrav(osloveni = 'lidi') {
-  document.write('Ahoj ' + osloveni + '!');
+if (a == 1) {
+  output = 'a se rovná 1';
 }
 
-pozdrav();
+document.write(output); // podmínka vypíše 'a se rovná 1'
 ```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/1/)
 
-#### Zápis podporovaný v Internet Exploreru a starších verzích prohlížečů
+### Jednoduchá podmínka s hodnotou při nesplnění
 ```
-function pozdrav(osloveni) {
-  osloveni = (osloveni !== undefined) ? osloveni : 'lidi'; // lze zapsat také jako osloveni = osloveni || 'lidi';
-  document.write('Ahoj ' + osloveni + '!');
+var output;
+var a = 2;
+
+if (a == 1) {
+  output = 'a se rovná 1';
+} else {
+  output = 'a se nerovná 1';
 }
 
-pozdrav();
+document.write(output); // podmínka vypíše 'a se nerovná 1'
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/9/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/2/)
 
+### Větvená podmínka s hodnotou při nesplnění
 ```
-function pozdrav(osloveni) {
-  
-  /* Funkce vrací aktuální hodinu návštěvníka webu */
-  function kolikjehodin() {
-    var d = new Date();
-    var h = d.getHours();
-    
-    return h;
-  }
-  
-  /* Funkce na základě aktuálního času vrací text pozdravu */
-  function textpozdravu() {
-    var t, h;
-    h = kolikjehodin();
-    
-    switch(true) {
-      case (h >= 5 && h < 7):
-        t = 'Dobré ráno'; break;
-      case (h >= 7 && h < 12):
-        t = 'Dobré dopoledne'; break;
-      case (h >= 12 && h < 13):
-        t = 'Dobré poledne'; break;
-      case (h >= 13 && h < 18):
-        t = 'Dobré odpoledne'; break;
-      case (h >= 18 && h < 20):
-        t = 'Dobrý podvečer'; break;
-      case (h >= 20 && h < 23):
-        t = 'Dobrý večer'; break;
-      default:
-        t = 'Dobrou noc'
-    }
-    
-    return t;
-  }
-  
-  var pozdrav = textpozdravu();
-  var osloveni = osloveni || 'všem';
-  
-  document.write(pozdrav + ' ' + osloveni + '!');
+var output;
+var a = 2;
+
+if (a == 1) {
+  output = 'a se rovná 1';
+} else if (a == 2) {
+  output = 'a se rovná 2';
+} else {
+  output = 'a se nerovná 1 ani 2';
 }
 
-pozdrav('Martine');
+document.write(output); // podmínka vypíše 'a se rovná 2'
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/11/), [Práce s datem](https://www.w3schools.com/js/js_dates.asp)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/3/)
+
+## Jiné způsoby konstrukce podmínek
+### Zkrácený zápis if - else
+```
+var a = 2;
+var output = (a == 1) ? 'a se rovná 1' : 'a se nerovná 1';
+
+document.write(output); // podmínka vypíše 'a se nerovná 1'
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/5/)
+
+### Konstrukce if - else if - else s využitím switch
+```
+var output;
+var a = 2;
+
+switch (a) {
+  case 1:
+    output = 'a se rovná 1'; break;
+  case 2:
+    output = 'a se rovná 2'; break;
+  default:
+    output = 'a se nerovná 1 ani 2';
+}
+
+document.write(output); // podmínka vypíše 'a se rovná 2'
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/4/)
+
+## Shoda hodnotou a typem
+```
+1 == '1'    // true  (number a string s hodnotou 1)
+1 === '1'   // false (typ proměnných není shodný)
+1 == true   // true  (hodnota 1 je rovna true; hodnota 0 je rovna false)
+1 === true  // false (typ proměnných není shodný)
+```
+
+### Rozdíl v práci s typem proměnné
+```
+var a = 1;
+document.write(a + 1); // vypíše hodnotu number 2
+
+var b = '1';
+document.write(b + 1); // vypíše hodnotu tring 11
+
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/6/)
 
 [Zpět na seznam kapitol](https://github.com/kaspim/pgs-training-js-basics-srcs/)
