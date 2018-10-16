@@ -1,12 +1,12 @@
 # Funkce
 
-```
+```javascript
 function mojefunkce() {
   // kód funkce
 }
 ```
 
-```
+```javascript
 function pozdrav() {
   document.write('Ahoj!');
 }
@@ -15,7 +15,7 @@ pozdrav();
 ```
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/10/)
 
-```
+```javascript
 function pozdrav(osloveni) {
   document.write('Ahoj ' + osloveni + '!');
 }
@@ -27,7 +27,7 @@ pozdrav('Katko');
 
 ### Výchozí hodnoty parametrů
 #### Zápis podporovaný od ECMAScript 6 - standard 2015
-```
+```javascript
 function pozdrav(osloveni = 'lidi') {
   document.write('Ahoj ' + osloveni + '!');
 }
@@ -36,7 +36,7 @@ pozdrav();
 ```
 
 #### Zápis podporovaný v Internet Exploreru a starších verzích prohlížečů
-```
+```javascript
 function pozdrav(osloveni) {
   osloveni = (osloveni !== undefined) ? osloveni : 'lidi'; // lze zapsat také jako osloveni = osloveni || 'lidi';
   document.write('Ahoj ' + osloveni + '!');
@@ -48,7 +48,7 @@ pozdrav();
 
 
 ### Vnořené funkce
-```
+```javascript
 function pozdrav(osloveni) {
   
   /* Funkce vrací aktuální hodinu návštěvníka webu */
