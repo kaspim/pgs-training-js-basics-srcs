@@ -27,3 +27,5 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * [w3schools.com - EN](https://www.w3schools.com/js/default.asp)
 * [Základy konstrukce JS - CZ](https://www.itnetwork.cz/javascript/zaklady)
 * [Základy frameworku jQuery - CZ](https://www.itnetwork.cz/javascript/jquery-zaklady)
+* [Rychlé testování a sdílení kódu](https://jsfiddle.net/)
+* [Nástroj pro testování regulárních výrazů](https://regex101.com/)
