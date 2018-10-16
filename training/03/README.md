@@ -21,7 +21,7 @@ Operátor | Popis
 
 ## Základní konstrukce podmínek
 ### Jednoduchá podmínka
-```
+```javascript
 var output;
 var a = 1;
 
@@ -34,7 +34,7 @@ document.write(output); // podmínka vypíše 'a se rovná 1'
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/1/)
 
 ### Jednoduchá podmínka s hodnotou při nesplnění
-```
+```javascript
 var output;
 var a = 2;
 
@@ -49,7 +49,7 @@ document.write(output); // podmínka vypíše 'a se nerovná 1'
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/2/)
 
 ### Větvená podmínka s hodnotou při nesplnění
-```
+```javascript
 var output;
 var a = 2;
 
@@ -67,7 +67,7 @@ document.write(output); // podmínka vypíše 'a se rovná 2'
 
 ## Jiné způsoby konstrukce podmínek
 ### Zkrácený zápis if - else
-```
+```javascript
 var a = 2;
 var output = (a == 1) ? 'a se rovná 1' : 'a se nerovná 1';
 
@@ -76,7 +76,7 @@ document.write(output); // podmínka vypíše 'a se nerovná 1'
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/5/)
 
 ### Konstrukce if - else if - else s využitím switch
-```
+```javascript
 var output;
 var a = 2;
 
@@ -94,22 +94,13 @@ document.write(output); // podmínka vypíše 'a se rovná 2'
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/4/)
 
 ## Shoda hodnotou a typem
-```
+```javascript
 1 == '1'    // true  (number a string s hodnotou 1)
 1 === '1'   // false (typ proměnných není shodný)
 1 == true   // true  (hodnota 1 je rovna true; hodnota 0 je rovna false)
 1 === true  // false (typ proměnných není shodný)
 ```
 
-### Rozdíl v práci s typem proměnné
-```
-var a = 1;
-document.write(a + 1); // vypíše hodnotu number 2
-
-var b = '1';
-document.write(b + 1); // vypíše hodnotu tring 11
-
-```
 [Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/6/)
 
 [Zpět na seznam kapitol](https://github.com/kaspim/pgs-training-js-basics-srcs/)
