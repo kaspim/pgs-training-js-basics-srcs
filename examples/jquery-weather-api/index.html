@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<title>jQuery JSON Weather API · Příklad</title>
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./website.js"></script>
+	
+	<link type="text/css" rel="stylesheet" media="all" href="./website.css" />
+</head>
+
+<body>
+
+<div id="page">
+	<div id="search" class="block">
+		<form id="weather">
+			<input type="text" name="city" placeholder="Město" />
+			<button class="getWeather" type="button">Vyhledat</button>
+		</form>
+	</div>
+	<div id="current" class="block"></div>
+	<div id="longtherm" class="block"></div>
+</div>
+
+<script type="text/javascript">
+	(function($) {
+		$('button.getWeather').on('click', function() {
+			var form = $(this).closest('form');
+			var city = $('input[name="city"]', form).val();
+			
+			getWeather({
+				apikey: 'a478411e3c0fa33dbaa8dd0dee6beb45',
+				units: 'metric',
+				location: city,
+				nowresult: '#current',
+				longtherm: '#longtherm'
+			});
+		});
+	})(jQuery);
+</script>
+
+</body>
+
+</html>
