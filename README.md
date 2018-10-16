@@ -1,8 +1,13 @@
 # Podklady školení základů JavaScriptu pro PREGIS
 Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-pregis). Najdete zde všechny příklady, které dnes probereme.
 
-
+## Úvodem
 ![JavaScript na webu](https://d2v4zi8pl64nxt.cloudfront.net/javascript-seo/5948abfc0e2df5.02876591.gif)
+
+Co je dobré vědět
+* JavaScript není Java
+* JavaScript se obvykle vykonává na straně prohlížeče - existují však i nástroje serverového provozu
+* JavaScript umožňuje vytvářet interaktivní webové aplikace a zpříjemnit uživateli práci s webem
 
 ## Obsah
 * [Deklarování a typy proměnných](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/01)
