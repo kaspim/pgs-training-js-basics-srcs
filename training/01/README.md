@@ -8,7 +8,7 @@ var pozdrav;
 pozdrav = 'Ahoj';
 ```
 ### Deklarování proměnné včetně hodnoty
-```
+```javascript
 var pozdrav = 'Ahoj';
 ```
 #### Vypsání proměnné do stránky
@@ -19,13 +19,13 @@ document.write(pozdrav); // vypíše Ahoj
 [Zobrazit příklad](https://jsfiddle.net/kaspim/6yx0opb5/)
 
 ### Je dobré znát
-```
+```javascript
 var   // nejobvyklejší typ deklarování proměnné
 let   // od ES6 2015 další možnost deklarování proměnné s platností vymezenou složenými závorkami {}, např. funkcí
 const // od ES6 2015 možnost deklarovat konstantu, jejíž hodnota nelze přepsat
 ```
-Příklady
-```
+#### Příklady
+```javascript
 var pozdrav = 'Ahoj';
 var pozdrav = 'Dobrý den';
 
@@ -34,7 +34,7 @@ document.write(pozdrav); // vypíše Dobrý den
 [Zobrazit příklad](https://jsfiddle.net/kaspim/6yx0opb5/1/)
 
 
-```
+```javascript
 const pozdrav = 'Ahoj';
 var pozdrav = 'Dobrý den';
 
@@ -42,7 +42,7 @@ document.write(pozdrav); // chyba syntaxe, skript se neprovede
 ```
 [Zobrazit příklad](https://jsfiddle.net/kaspim/6yx0opb5/2/)
 
-```
+```javascript
 let pozdrav = 'Ahoj';
 {
   let pozdrav = 'Dobrý den';
