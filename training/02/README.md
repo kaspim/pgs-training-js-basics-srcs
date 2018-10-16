@@ -1,115 +1,123 @@
-# 02 Podmínky a operátory
+# Práce s proměnnými
+## Základní typy proměnných
+Typ | Popis | Příklad
+--- | ----- | -------
+Number | číselná hodnota | 1, 12, 16.5
+String | textový řetězec | 'Mléko', 'Rohlíky'
+Boolean | logická hodnota | true, false
+Array | skupina proměnných | nakupniSeznam = ['Mléko', 'Rohlíky', 'Vejce']
 
-## Operátory podmínek
-Operátor | Popis
--------- | -----
-\=\= | je rovno
-\!\= | není rovno
-\< | je menší než
-\> | je větší než
-\<\= | je menší nebo rovno než
-\>\= | je větší nebo rovno než
-\=\=\= | je rovno hodnotou a typem
-\!\=\= | je nerovno hodnotou nebo typem
+## Proměnná typu number
+```javascript
+var rohliku = 10;
 
-## Logické operátory
-Operátor | Popis
--------- | -----
-\&\& | AND (logické A)
-\|\| | OR (logické NEBO)
-\! | NOT (logický zápor)
-
-## Základní konstrukce podmínek
-### Jednoduchá podmínka
+document.write('Rohlíků: ' + 10);
 ```
-var output;
-var a = 1;
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/4/)
 
-if (a == 1) {
-  output = 'a se rovná 1';
-}
+```javascript
+var a = 10;
+a += 5; // totéž jako a = a + 5;
 
-document.write(output); // podmínka vypíše 'a se rovná 1'
+document.write('Rohlíků: ' + a);
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/1/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/5/)
 
-### Jednoduchá podmínka s hodnotou při nesplnění
+```javascript
+var a = 10;
+var b = 5;
+var c = a + b;
+
+document.write('Rohlíků a housek: ' + c);
 ```
-var output;
-var a = 2;
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/6/)
 
-if (a == 1) {
-  output = 'a se rovná 1';
+## Proměnná typu string
+```javascript
+var nazev = 'Nákupní seznam';
+
+document.write(nazev);
+```
+
+```javascript
+var nazev = 'Nákupní seznam';
+nazev += ' na středu';
+
+document.write(nazev);
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/7/)
+
+```javascript
+var a = '10';
+var b = 5;
+var c = a + b;
+
+document.write('Rohlíků a housek: ' + c);
+```
+[Zobrazit příklad 1](https://jsfiddle.net/kaspim/0jsdgy9v/8/), [příklad 2](https://jsfiddle.net/kaspim/0jsdgy9v/9/)
+
+### Proměnná typu Boolean
+```javascript
+var text;
+var mamradrohliky = true;
+
+if (mamradrohliky === true) {
+  text = 'Nakup rohlíky';
 } else {
-  output = 'a se nerovná 1';
+  text = 'Kup raději chleba';
 }
 
-document.write(output); // podmínka vypíše 'a se nerovná 1'
+document.write(text);
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/2/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/10/)
 
-### Větvená podmínka s hodnotou při nesplnění
+### Proměnná typu Array
+```javascript
+var seznam = ['Rohlíky', 'Mléko', 'Chleba', 'Vejce'];
+
+document.write(seznam[2]);
 ```
-var output;
-var a = 2;
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/12/)
 
-if (a == 1) {
-  output = 'a se rovná 1';
-} else if (a == 2) {
-  output = 'a se rovná 2';
-} else {
-  output = 'a se nerovná 1 ani 2';
+```javascript
+var seznam = ['Rohlíky', 'Mléko', 'Chleba', 'Vejce'];
+
+for(i = 0; i < seznam.length; i++) {
+  document.write(seznam[i] + '<br/>');
+}
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/13/)
+
+```javascript
+var nazev = 'Můj nákupní seznam';
+var celkem = 0;
+var seznam = [{
+  polozka: 'Rohlíky',
+  pocet: 10,
+  cena: 1.8
+}, {
+  polozka: 'Mléko',
+  pocet: 1,
+  cena: 12.9
+}, {
+  polozka: 'Chleba',
+  pocet: 2,
+  cena: 22
+}, {
+  polozka: 'Vejce',
+  pocet: 6,
+  cena: 2
+}];
+
+document.write('<h1> ' + nazev + ' </h1><p>');
+
+for(i = 0; i < seznam.length; i++) {
+  document.write(seznam[i].polozka + ' ..... ' + seznam[i].pocet + 'ks ..... ' + (seznam[i].pocet * seznam[i].cena) + 'CZK<br/>');
+  celkem += (seznam[i].pocet * seznam[i].cena);
 }
 
-document.write(output); // podmínka vypíše 'a se rovná 2'
+document.write('</p><p>Celková cena '+ celkem + 'CZK</p>');
 ```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/3/)
-
-## Jiné způsoby konstrukce podmínek
-### Zkrácený zápis if - else
-```
-var a = 2;
-var output = (a == 1) ? 'a se rovná 1' : 'a se nerovná 1';
-
-document.write(output); // podmínka vypíše 'a se nerovná 1'
-```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/5/)
-
-### Konstrukce if - else if - else s využitím switch
-```
-var output;
-var a = 2;
-
-switch (a) {
-  case 1:
-    output = 'a se rovná 1'; break;
-  case 2:
-    output = 'a se rovná 2'; break;
-  default:
-    output = 'a se nerovná 1 ani 2';
-}
-
-document.write(output); // podmínka vypíše 'a se rovná 2'
-```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/4/)
-
-## Shoda hodnotou a typem
-```
-1 == '1'    // true  (number a string s hodnotou 1)
-1 === '1'   // false (typ proměnných není shodný)
-1 == true   // true  (hodnota 1 je rovna true; hodnota 0 je rovna false)
-1 === true  // false (typ proměnných není shodný)
-```
-
-### Rozdíl v práci s typem proměnné
-```
-var a = 1;
-document.write(a + 1); // vypíše hodnotu number 2
-
-var b = '1';
-document.write(b + 1); // vypíše hodnotu tring 11
-
-```
-[Zobrazit příklad](https://jsfiddle.net/kaspim/9ub2xaLs/6/)
+[Zobrazit příklad](https://jsfiddle.net/kaspim/0jsdgy9v/15/)
 
 [Zpět na seznam kapitol](https://github.com/kaspim/pgs-training-js-basics-srcs/)
