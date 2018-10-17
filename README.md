@@ -31,3 +31,4 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * [Základy frameworku jQuery - CZ](https://www.itnetwork.cz/javascript/jquery-zaklady)
 * [Rychlé testování a sdílení kódu](https://jsfiddle.net/)
 * [Nástroj pro testování regulárních výrazů](https://regex101.com/)
+* [Kompatibilita ES6 s prohlížeči](https://kangax.github.io/compat-table/es6/)
