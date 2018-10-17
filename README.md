@@ -8,6 +8,7 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * JavaScript není Java
 * JavaScript se obvykle vykonává na straně prohlížeče - existují však i nástroje serverového provozu
 * JavaScript umožňuje vytvářet interaktivní webové aplikace a zpříjemnit uživateli práci s webem
+* Validace provedené JavaScriptem nelze brát jako jediný stupeň ochrany - uživatel může JS deaktivovat nebo změnit
 
 ## Obsah
 * [Deklarování a typy proměnných](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/01)
