@@ -22,7 +22,7 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * [Kontrola povinných polí formuláře v JS](https://jsfiddle.net/kaspim/wxc2nhd5/3/), [Kontrola povinných polí formuláře v HTML5](https://jsfiddle.net/kaspim/wxc2nhd5/4/)
 * [Kontrola polí formuláře v JS s RegEx](https://jsfiddle.net/kaspim/wxc2nhd5/5/), [Zdrojové kódy](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/examples/jquery-form-validator)
 * [Předpověď počasí s jQuery a externím API](https://jsfiddle.net/kaspim/9wdh65nm/), [Zdrojové kódy](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/examples/jquery-weather-api)
-* [Slider s navigací v Pure JS](https://jsfiddle.net/kaspim/37o0msxr/), [Zdrojové kódy](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/examples/js-slider)
+* [Slider s navigací v JS](https://jsfiddle.net/kaspim/37o0msxr/), [Zdrojové kódy](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/examples/js-slider)
 
 ## Kam dál?
 * [w3schools.com - EN](https://www.w3schools.com/js/default.asp)
