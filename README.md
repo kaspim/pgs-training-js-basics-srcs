@@ -29,6 +29,10 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * [w3schools.com - EN](https://www.w3schools.com/js/default.asp)
 * [Základy konstrukce JS - CZ](https://www.itnetwork.cz/javascript/zaklady)
 * [Základy frameworku jQuery - CZ](https://www.itnetwork.cz/javascript/jquery-zaklady)
-* [Rychlé testování a sdílení kódu](https://jsfiddle.net/)
-* [Nástroj pro testování regulárních výrazů](https://regex101.com/)
-* [Kompatibilita ES6 s prohlížeči](https://kangax.github.io/compat-table/es6/)
+* [Rychlé testování a sdílení kódu - nástroj](https://jsfiddle.net/)
+* [Regulární výrazy - CZ](https://www.regularnivyrazy.info/regularni-vyrazy-zaklady.html#gref)
+* [Testování regulárních výrazů - nástroj](https://regex101.com/)
+* [Kompatibilita ES6 s prohlížeči - EN](https://kangax.github.io/compat-table/es6/)
+
+## Líbilo se?
+Díky za pozornost. Všechny příklady vám zůstaou k dispozici na této stránce. Pokud vám školení přišlo užitečné, můžete mi na oplátku třeba potvrdit dovednost JavaScript na mém [LinkedIn profilu](https://www.linkedin.com/in/kaspim/).
