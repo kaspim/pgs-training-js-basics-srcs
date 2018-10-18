@@ -18,6 +18,9 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * [Práce s DOM a událostmi](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/05)
 * [Základy ladění JS](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/06)
 
+## Bonusy
+* [Funkce pro práci s cookies](https://github.com/kaspim/pgs-training-js-basics-srcs/tree/master/training/07)
+
 ## Příklady
 * [Accordion v JS](https://jsfiddle.net/kaspim/qfb1e324/17/), [Accordion v jQuery](https://jsfiddle.net/kaspim/qfb1e324/16/)
 * [Kontrola povinných polí formuláře v JS](https://jsfiddle.net/kaspim/wxc2nhd5/3/), [Kontrola povinných polí formuláře v HTML5](https://jsfiddle.net/kaspim/wxc2nhd5/4/)
