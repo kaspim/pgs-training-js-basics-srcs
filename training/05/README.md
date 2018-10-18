@@ -57,14 +57,12 @@
 ### Nastavení oslovení
 #### JavaScript
 ```javascript
-document.querySelector('button[name="osloveni"]').addEventListener('click', nastavOsloveni);
-
-function nastavOsloveni() {
+document.querySelector('button[name="osloveni"]').addEventListener('click', function () {
   var osloveni = document.querySelector('input[name="osloveni"]').value;
   document.querySelector('#pozdrav > span.osloveni').innerText = osloveni;
-}
+});
 ```
-[Zobrazit příklad 1](https://jsfiddle.net/kaspim/vfkzLsc9/2/), [příklad 2](https://jsfiddle.net/kaspim/vfkzLsc9/3/)
+[Zobrazit příklad 1](https://jsfiddle.net/kaspim/vfkzLsc9/5/), [příklad 2](https://jsfiddle.net/kaspim/vfkzLsc9/4/)
 
 #### JavaScript + jQuery
 ```javascript
