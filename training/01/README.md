@@ -1,9 +1,29 @@
-# Deklarování a typy prměnných
+# Umístění JavaScriptu na stránce
+## HTML 4 a starší - vložení do stránky
+```html
+<script type="text/javascript">
+  mujkodjavascriptu;
+</script>
+```
+
+## HTML 5 - vložení do stránky
+```html
+<script>
+  mujkodjavascriptu;
+</script>
+```
+
+## Externí soubor
+```html
+<script src="./cestakmemuskriptu.js"></script>
+```
+
+# Deklarování a typy proměnných
 Proměnné slouží k nastavení a uchování hodnot. Název proměnné může být tvořen znaky ```a-z```, ```A-Z``` a číslicemi ```0-9``` nebo znakem ```_``` nejsou-li uvedeny na začátku. JavaScript je *case sensitive* - tzn. rozlišuje velikost písma.
 
 ## Deklarování a chování proměnné
 ### Deklarování prázné proměnné a nastavení hodnoty
-```
+```javascript
 var pozdrav;
 pozdrav = 'Ahoj';
 ```
@@ -12,7 +32,7 @@ pozdrav = 'Ahoj';
 var pozdrav = 'Ahoj';
 ```
 #### Vypsání proměnné do stránky
-```
+```javascript
 document.write(pozdrav); // vypíše Ahoj
 ```
 
