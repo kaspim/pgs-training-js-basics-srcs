@@ -65,7 +65,7 @@ function nastavOsloveni() {
 #### JavaScript + jQuery
 ```javascript
 $('button[name="osloveni"]').on('click', function() {
-	var osloveni = $('input[name="osloveni"]').val();
+  var osloveni = $('input[name="osloveni"]').val();
   $('#pozdrav > span.osloveni').text(osloveni);
 });
 ```
