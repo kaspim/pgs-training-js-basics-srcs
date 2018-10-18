@@ -1,7 +1,7 @@
 # Práce s DOM a událostmi
 * Document Object Model je strom elementů (objektů), z nichž se stránka skládá.
 * Odkazování na DOM se užívá i ve spojení s definováním stylů v CSS.
-* Oblíbeným frameworkem pro práci s DOM je [jQuery](https://api.jquery.com/)
+* Oblíbeným frameworkem pro práci s DOM je jQuery.
 
 ## Ukázkový kód stránky
 ```html
@@ -48,6 +48,10 @@
   </body>
 </html>
 ```
+
+## Je dobré znát
+* [Selektory](https://www.w3schools.com/jquery/jquery_ref_selectors.asp)
+* [jQuery API](https://api.jquery.com/)
 
 ## Příklady
 ### Nastavení oslovení
