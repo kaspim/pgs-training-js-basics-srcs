@@ -88,3 +88,12 @@ $(document).ready(function() {
   // skripty nebo funkce
 });
 ```
+
+#### Umístění skriptu před konec body
+```javascript
+    <script>
+      // skripty nebo funkce
+    </script>
+  </body>
+</html>
+```
