@@ -54,6 +54,27 @@
 * [jQuery API](https://api.jquery.com/)
 
 ## Příklady
+### Kliknutí na nadpis článku
+#### JavaScript
+```javascript
+var titles = document.querySelectorAll('article > h2');
+
+for (var i = 0; i < titles.length; i++) {
+  titles[i].addEventListener('click', function() {
+    alert('Klikáš na článek ' + this.innerText);
+  })	
+}
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/vfkzLsc9/6/)
+
+#### jQuery
+```javascript
+$('article > h2').on('click', function() {
+  alert('Klikáš na článek ' + $(this).text());
+});
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/vfkzLsc9/7/)
+
 ### Nastavení oslovení
 #### JavaScript
 ```javascript
@@ -72,6 +93,24 @@ $('button[name="osloveni"]').on('click', function() {
 });
 ```
 [Zobrazit příklad 1](https://jsfiddle.net/kaspim/vfkzLsc9/), [příklad 2](https://jsfiddle.net/kaspim/vfkzLsc9/1/)
+
+#### Průběžné doplnění v jQuery
+```javascript
+$('button[name="osloveni"]').on('click', function() {
+  var osloveni = $('input[name="osloveni"]').val();
+  nastavOsloveni(osloveni);
+});
+
+$('input[name="osloveni"]').on('keyup', function() {
+  var osloveni = $(this).val();
+  nastavOsloveni(osloveni);
+});
+
+function nastavOsloveni(jmeno) {
+  $('#pozdrav > span.osloveni').text(jmeno);
+}
+```
+[Zobrazit příklad](https://jsfiddle.net/kaspim/vfkzLsc9/8/)
 
 ## Aby to fungovalo
 #### JavaScript
