@@ -90,7 +90,7 @@ $(document).ready(function() {
 ```
 
 #### Umístění skriptu před konec body
-```javascript
+```html
     <script>
       // skripty nebo funkce
     </script>
