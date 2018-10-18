@@ -112,7 +112,7 @@ function nastavOsloveni(jmeno) {
 ```
 [Zobrazit příklad](https://jsfiddle.net/kaspim/vfkzLsc9/8/)
 
-## Aby to fungovalo
+## Aby vše fungovalo
 #### JavaScript
 Skript musí být spuštěn po dokončení načtení DOM modelu.
 ```javascript
