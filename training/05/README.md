@@ -34,8 +34,8 @@
          <p>Text mého ukázkového článku 1 není nijak dlouhý ani zajímavý, ale to nám pro ukázku nevadí.</p>
       </article>
       <article>
-         <h2>Název článku 1</h2>
-         <p>Text mého ukázkového článku 1 není nijak dlouhý ani zajímavý, ale to nám pro ukázku nevadí.</p>
+         <h2>Název článku 2</h2>
+         <p>Text mého ukázkového článku 2 není nijak dlouhý ani zajímavý, ale to nám pro ukázku nevadí.</p>
       </article>
     </section>
     <section>
@@ -64,7 +64,7 @@ document.querySelector('button[name="osloveni"]').addEventListener('click', func
 ```
 [Zobrazit příklad 1](https://jsfiddle.net/kaspim/vfkzLsc9/5/), [příklad 2](https://jsfiddle.net/kaspim/vfkzLsc9/4/)
 
-#### JavaScript + jQuery
+#### jQuery
 ```javascript
 $('button[name="osloveni"]').on('click', function() {
   var osloveni = $('input[name="osloveni"]').val();
@@ -72,3 +72,19 @@ $('button[name="osloveni"]').on('click', function() {
 });
 ```
 [Zobrazit příklad 1](https://jsfiddle.net/kaspim/vfkzLsc9/), [příklad 2](https://jsfiddle.net/kaspim/vfkzLsc9/1/)
+
+## Aby to fungovalo
+#### JavaScript
+Skript musí být spuštěn po dokončení načtení DOM modelu.
+```javascript
+document.addEventListener("DOMContentLoaded", function() { 
+  // skripty nebo funkce
+});
+```
+
+#### jQuery
+```javascript
+$(document).ready(function() {
+  // skripty nebo funkce
+});
+```
