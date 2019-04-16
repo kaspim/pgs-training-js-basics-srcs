@@ -37,5 +37,4 @@ Zapamatujte si tento odkaz [bit.ly/js-skoleni-pregis](http://bit.ly/js-skoleni-p
 * [Testování regulárních výrazů - nástroj](https://regex101.com/)
 * [Kompatibilita ES6 s prohlížeči - EN](https://kangax.github.io/compat-table/es6/)
 
-## Líbilo se?
-Díky za pozornost. Všechny příklady vám zůstaou k dispozici na této stránce. Pokud vám školení přišlo užitečné, můžete mi na oplátku třeba potvrdit dovednost JavaScript na mém [LinkedIn profilu](https://www.linkedin.com/in/kaspim/).
+
